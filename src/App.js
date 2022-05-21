@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Menu_Tab from "./Component/Tabs";
+import Menu_Card from "./Component/menu";
+import MenuContainer from "./Component/Menu-Container";
+import axios from "axios";
+import {useState} from "react";
+import FreeSolo from "./Component/Search-Recipe";
+import Search_Recipe from "./Component/Search-Recipe";
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <div className="box">
+        <h1 className="title">Food Recipe </h1>
+        <Search_Recipe />
+        </div>
+
   );
 }
 
